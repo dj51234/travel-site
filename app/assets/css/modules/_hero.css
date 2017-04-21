@@ -1,1 +1,18 @@
+.large-hero {
+  position: relative;
+  /*background: url('../images/hero--large.jpg');*/
+  /*background-size: cover;*/
+  /*height: 500px;*/
+  max-width: 100%;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
 
+.large-hero__text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
