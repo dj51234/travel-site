@@ -1,0 +1,8 @@
+.section {
+  padding: 4.5rem 0;
+}
+
+.section--blue {
+  background-color: $darkblue;
+  color: #FFF;
+}
