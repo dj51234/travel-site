@@ -1,0 +1,18 @@
+.margin-bottom-h {
+  margin-bottom: 2rem;
+
+  @mixin atMedium {
+    margin-bottom: 3.6125rem;
+  }
+}
+
+.margin-top-0-h {
+  margin-top: 2rem;
+  @mixin atMedium {
+    margin-top: 0;
+  }
+}
+
+.font-light-h {
+  font-weight: 100;
+}

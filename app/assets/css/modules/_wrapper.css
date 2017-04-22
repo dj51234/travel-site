@@ -1,5 +1,15 @@
 .wrapper {
-  padding: 100px 18px;
+  padding: 0px 18px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.wrapper--inner {
+  max-width: 976px;
 }

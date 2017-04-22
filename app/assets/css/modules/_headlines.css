@@ -1,0 +1,47 @@
+.headline {
+  font-size: 1.8rem;
+  color: $darkblue;
+
+  @mixin atSmall {
+    font-size: 2.8rem;
+  }
+}
+
+.headline--small {
+  font-size: 1.2rem;
+
+  @mixin atSmall {
+    font-size: 1.8rem;
+  }
+}
+
+.headline--narrow {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.headline--orange {
+  color: $orange;
+}
+
+/* Headline helpers */
+
+.headline--margin-bottom-h {
+  margin-bottom: 2.5rem;
+}
+
+.headline--no-margin-top-h {
+    margin-top: 0;
+}
+
+.headline--light-h {
+  font-weight: 100;
+}
+
+.headline--margin-bottom-lg-h {
+  margin-bottom: 1.5em;
+}
+
+.headline--center-h {
+  text-align: center;
+}
