@@ -13,3 +13,11 @@
 .wrapper--inner {
   max-width: 976px;
 }
+
+.wrapper--testimonials {
+  padding: 0;
+
+  @mixin atMedium {
+    padding: 0px 18px;
+  }
+}

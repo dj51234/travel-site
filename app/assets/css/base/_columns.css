@@ -16,9 +16,35 @@
   }
 }
 
+.row--gutters-sm {
+  margin-right: -45px;
+  & > div {
+    padding-right: 45px;
+  }
+}
+
+.row--flex {
+  flex-direction: column;
+  @mixin atLarge {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.row__column--flex {
+  @mixin atLarge {
+    float: none;
+    display: flex;
+  }
+}
+
 .row__column {
 
   @mixin atMedium {
+    float: left;
+  }
+
+  @mixin atLarge {
     float: left;
   }
 }
@@ -47,6 +73,13 @@
 .row__column-4 {
   width: 100%;
   @mixin atMedium {
+    width: 33.33%;
+  }
+}
+
+.row__column-4--flexed {
+  width: 100%;
+  @mixin atLarge {
     width: 33.33%;
   }
 }
