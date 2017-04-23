@@ -1,0 +1,15 @@
+.footer {
+  color: white;
+  background: $darkblue;
+  padding: .5rem;
+  text-align: center;
+}
+
+.copyright {
+  font-size: .9rem;
+  display: block;
+
+  @mixin atMedium {
+    display: inline-block;
+  }
+}

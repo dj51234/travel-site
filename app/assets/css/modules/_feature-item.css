@@ -11,6 +11,7 @@
 
 .feature-item__icon {
   margin: 0 auto;
+  display: inline-block;
 
   @mixin atSmall {
     position: absolute;

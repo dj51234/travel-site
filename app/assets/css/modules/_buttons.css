@@ -23,3 +23,14 @@
     font-size: 1.3rem;
   }
 }
+
+/* Btn margin */
+
+.btn--footer {
+  margin-top: 1em;
+
+  @mixin atMedium {
+    margin-top: 0;
+    margin-left: 3em;
+  }
+}
