@@ -6,6 +6,23 @@
   }
 }
 
+.section--padding-bottom-0 {
+  padding-bottom: 0;
+
+  @mixin atSmall {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.section--with-bg-img {
+  background: #e0e6ef;
+
+  @mixin atMedium {
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
+}
+
 .section__section-title {
   font-weight: 300;
   font-size: 2.5rem;
@@ -22,18 +39,32 @@
   }
 }
 
+.section__section-title--testimonials {
+  margin-bottom: 160px;
+}
+
+.section__section-title--white {
+  color: #FFF;
+}
+
+.section__section-title--blue {
+  color: $darkblue;
+}
+
 .section__icon {
   margin-right: .5rem;
   display: block;
   margin: 0 auto 2rem;
 
   @mixin atSmall {
-    display: inline;
+    display: inline-block;
     margin-bottom: 0;
+    position: relative;
+    top: 8px;
   }
 }
 
 .section--blue {
   background-color: $darkblue;
-  color: #FFF;
+  color: #fff;
 }

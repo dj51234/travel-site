@@ -16,3 +16,11 @@
 .font-light-h {
   font-weight: 100;
 }
+
+.font-medium-h {
+  font-weight: 400;
+}
+
+.centered-h {
+  text-align: center;
+}
