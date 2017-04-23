@@ -364,6 +364,12 @@ a {
 .row--gutters > div {
   padding-right: 65px;
 }
+.row--gutters-lg {
+  margin-right: -105px;
+}
+.row--gutters-lg > div {
+  padding-right: 105px;
+}
 @media (min-width: 800px) {
   .row__column {
     float: left;
@@ -570,12 +576,72 @@ a {
 .headline--center-h {
   text-align: center;
 }
+.feature-item {
+  text-align: center;
+  position: relative;
+  padding-bottom: 3.37rem;
+}
+@media (min-width: 530px) {
+  .feature-item {
+    padding-left: 5.625rem;
+    text-align: left;
+  }
+}
+.feature-item__icon {
+  margin: 0 auto;
+}
+@media (min-width: 530px) {
+  .feature-item__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.feature-item__title {
+  font-weight: 300;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 530px) {
+  .feature-item__title {
+    font-size: 1.5rem;
+  }
+}
+.feature-item__paragraph {
+  line-height: 1.8;
+}
 .section {
   padding: 1.5rem 0;
 }
 @media (min-width: 530px) {
   .section {
     padding: 4.5rem 0;
+  }
+}
+.section__section-title {
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media (min-width: 530px) {
+  .section__section-title {
+    font-size: 3.75rem;
+    margin-bottom: 3rem;
+  }
+}
+.section__section-title strong {
+  font-weight: 500;
+}
+.section__icon {
+  margin-right: .5rem;
+  display: block;
+  margin: 0 auto 2rem;
+}
+@media (min-width: 530px) {
+  .section__icon {
+    display: inline;
+    margin-bottom: 0;
   }
 }
 .section--blue {
