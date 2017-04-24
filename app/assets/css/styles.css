@@ -18,4 +18,6 @@
 @import 'modules/_wrapper';
 @import 'modules/_testimonials';
 @import 'modules/_sprite';
+@import 'modules/_header';
 @import 'modules/_footer';
+@import 'modules/_primary-nav';
