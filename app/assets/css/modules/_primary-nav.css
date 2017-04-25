@@ -1,0 +1,40 @@
+.primary-nav {
+  padding-top: 12px;
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 7px;
+      @mixin atMedium {
+        margin-right: 20px;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      background: rgba($darkblue, .6);
+      padding: 5px 8px;
+      font-size: .8rem;
+
+      @mixin atMedium {
+        background: none;
+        padding: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.primary-nav--pull-right {
+  float: none;
+
+  @mixin atMedium {
+    float: right;
+  }
+}
