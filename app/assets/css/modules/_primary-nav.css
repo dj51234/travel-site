@@ -26,6 +26,10 @@
         background: none;
         padding: 0;
         font-size: 1rem;
+
+        &.is-current-section {
+          color: #FABB69;
+        }
       }
     }
   }

@@ -21,13 +21,13 @@
       </div>
       <div class="header__menu-content">
         <div class="header__btn-container">
-          <a class="btn" href="#">Get in Touch</a>
+          <a class="btn open-modal" href="#">Get in Touch</a>
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#our-beginning">Our Beginning</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+            <li><a href="#features" id="features-link">Features</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
           </ul>
         </nav>
       </div>
@@ -46,12 +46,12 @@
         <h1 class="large-hero__heading">Your clarity.</h1>
         <h2 class="large-hero__sub-heading">One trip away.</h2>
         <p class="large-hero__motto">We create soul restoring journeys that inspire you to be you.</p>
-        <a class="btn btn--large btn--orange" href="#">Get Started Today</a>
+        <a class="btn btn--large btn--orange open-modal" href="#">Get Started Today</a>
       </div>
     </div>
   </div>
 
-  <div id="our-beginning" class="section">
+  <div id="our-beginning" class="section" data-header-link="#our-beginning-link">
     <div class="wrapper">
       <h2 class="headline headline--center-h headline--light-h">The first trip we planned <strong>was our own.</strong></h2>
       <h3 class="headline headline--small headline--narrow headline--orange headline--center-h headline--light-h headline--margin-bottom-h">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <div id="features" class="section section--blue">
+  <div id="features" class="section section--blue" data-header-link="#features-link">
     <div class="wrapper">
       <h2 class="section__section-title">
         <span class="section__icon icon icon--star"></span>
@@ -123,7 +123,7 @@
     </div>
   </div>
 
-  <div id="testimonials" class="section section--with-bg-img section--padding-bottom-0">
+  <div id="testimonials" class="section section--with-bg-img section--padding-bottom-0" data-header-link="#testimonials-link">
     <div class="wrapper wrapper--testimonials">
 
       <h2 class="section__section-title section__section-title--blue section__section-title--testimonials">
@@ -176,9 +176,33 @@
 
   <footer class="footer">
     <div class="wrapper">
-      <p class="footer__text"><span class="copyright font-light-h">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a class="btn btn--orange btn--footer" href="#">Get in Touch</a></p>
+      <p class="footer__text"><span class="copyright font-light-h">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a class="btn btn--orange btn--footer open-modal" href="#">Get in Touch</a></p>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="wrapper">
+      <div class="modal__content wrapper--small">
+        <h2 class="modal__modal-title"><span class="modal__icon icon icon--mail"></span>Get in <strong>Touch</strong></h2>
+        <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora esse quam ipsam consectetur corrupti illo unde culpa incidunt quisquam saepe, possimus, harum voluptate ut perspiciatis ipsum assumenda, illum reiciendis id.</p>
+        <div class="social-links">
+          <div class="social-links__link-container">
+            <span class="social-links__icon icon icon--facebook"></span>
+          </div>
+          <div class="social-links__link-container">
+            <span class="social-links__icon icon icon--twitter"></span>
+          </div>
+          <div class="social-links__link-container">
+            <span class="social-links__icon icon icon--instagram"></span>
+          </div>
+          <div class="social-links__link-container">
+            <span class="social-links__icon icon icon--youtube"></span>
+          </div>
+        </div>
+        <div class="modal__close">X</div>
+      </div>
+    </div>
+  </div>
   <script src="temp/assets/js/bundle.js"></script>
 </body>
 </html>
