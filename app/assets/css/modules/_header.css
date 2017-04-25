@@ -3,6 +3,11 @@
   z-index: 2;
   width: 100%;
   padding: 1rem 0;
+  transition: background .3s ease-out;
+
+  &--is-expanded {
+    background: rgba($darkblue, 0.5);
+  }
 
   @mixin atMedium {
     background: rgba($darkblue, 0.3);
@@ -10,15 +15,33 @@
 }
 
 .header__menu-content {
-  display: none;
+  opacity: 0;
+  transform: scale(1.2);
+  pointer-events: none;
+  transition: all .3s ease-out;
+  padding: 75px 0 15px;
+  text-align: center;
+
+  &--is-visible {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
   @mixin atMedium {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    padding-top: 0;
+    transform: scale(1);
   }
 }
 
 .header__btn-container {
-  float: right;
+  float: none;
+
+  @mixin atMedium {
+    float: right;
+  }
 }
 
 .header__logo {
@@ -49,40 +72,40 @@
   right: 10px;
   font-size: 0;
   cursor: pointer;
+  z-index: 3;
 
-  span {
-    transition: all .3s ease-in-out;
-  }
-
-  /* Toggling styles */
-  &.toggle-mobile {
-    span {
-      &:nth-child(1) {
-        transform: rotate(48deg);
-        transform-origin: top left;
-      }
-
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
-      &:nth-child(3) {
-        transform: rotate(-48deg);
-        transform-origin: bottom left;
-      }
-    }
-  }
-
-  @mixin atMedium {
-    display: none;
-  }
-
-  span {
+  &__bar {
     width: 100%;
     background: #fff;
     height: 3px;
     border-radius: 2px;
     display: inline-block;
     margin: 3px 0;
+    transition: all .3s ease-in-out;
+  }
+
+  /* Toggling styles */
+  &--toggle-x {
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: left center;
+      }
+    }
+  }
+
+  @mixin atMedium {
+    display: none;
   }
 }

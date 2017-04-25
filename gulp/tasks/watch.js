@@ -17,9 +17,16 @@ gulp.task('watch', function() {
     gulp.start('injectCss');
   });
 
+  watch('./app/assets/js/**/*.js', function() {
+    gulp.start('injectJs');
+  })
 });
 
 gulp.task('injectCss', ['css'], function() {
   return gulp.src('./app/temp/assets/css/styles.css')
              .pipe(browserSync.stream());
+});
+
+gulp.task('injectJs', ['webpack'], function() {
+  browserSync.reload();
 });

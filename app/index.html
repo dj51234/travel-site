@@ -14,10 +14,10 @@
       <div class="header__logo">
         <span class="header__logo-inner icon icon--clear-view-escapes"></span>
       </div>
-      <div class="header__menu-icon" onclick="">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="header__menu-icon">
+        <span class="header__menu-icon__bar"></span>
+        <span class="header__menu-icon__bar"></span>
+        <span class="header__menu-icon__bar"></span>
       </div>
       <div class="header__menu-content">
         <div class="header__btn-container">
@@ -179,12 +179,6 @@
       <p class="footer__text"><span class="copyright font-light-h">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a class="btn btn--orange btn--footer" href="#">Get in Touch</a></p>
     </div>
   </footer>
-  <script>
-    const menuIcon = document.querySelector('.header__menu-icon');
-
-    menuIcon.addEventListener('click', function(e) {
-      this.classList.toggle('toggle-mobile');
-    });
-  </script>
+  <script src="temp/assets/js/bundle.js"></script>
 </body>
 </html>
