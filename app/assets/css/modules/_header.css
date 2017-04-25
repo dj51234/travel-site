@@ -64,7 +64,7 @@
     transform: translateX(0) scale(1);
 
     &--is-scrolling {
-      transform: scale(.57);
+      transform: scale(.585);
     }
   }
 }

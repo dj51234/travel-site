@@ -1,0 +1,28 @@
+.social-links {
+
+  &__link-container {
+    height: 74px;
+    width: 33%;
+    background: $orange;
+    display: inline-block;
+    margin: 0px 8px 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+      background: $darkblue;
+    }
+
+    @mixin atSmall {
+      width: 74px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

@@ -1,0 +1,84 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.9);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.2);
+  transition: all .3s ease-in-out;
+
+  &--is-open {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__modal-title {
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: .5em;
+    color: $darkblue;
+
+    @mixin atSmall {
+      font-size: 3.75rem;
+      /*margin-bottom: 1.8em;*/
+    }
+
+    @mixin atMedium {
+      font-size: 3.75rem;
+      /*margin-bottom: 3rem;*/
+    }
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  &__icon {
+    margin-right: 50px;
+    display: block;
+    margin: 0 auto 2rem;
+
+    @mixin atSmall {
+      display: inline-block;
+      margin-bottom: 0;
+      position: relative;
+      top: 4px;
+      margin-right: .3em;
+    }
+  }
+
+  &__description {
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  &__close {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $darkblue;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
