@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 2;
   width: 100%;
-  padding: 1rem 0;
+  padding: .5rem 0;
   transition: background .3s ease-out;
 
   &--is-expanded {
@@ -11,6 +11,11 @@
 
   @mixin atMedium {
     background: rgba($darkblue, 0.3);
+    position: fixed;
+
+    &--is-scrolling {
+      background: rgba(23,51,72, .85);
+    }
   }
 }
 
@@ -52,10 +57,15 @@
   transform-origin: top;
   background: $darkblue;
   padding: 1rem 2rem;
+  transition: transform .2s ease-in-out;
 
   @mixin atMedium {
     left: auto;
     transform: translateX(0) scale(1);
+
+    &--is-scrolling {
+      transform: scale(.57);
+    }
   }
 }
 

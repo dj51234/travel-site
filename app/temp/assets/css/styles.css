@@ -928,7 +928,7 @@ a {
   position: absolute;
   z-index: 2;
   width: 100%;
-  padding: 1rem 0;
+  padding: .5rem 0;
   transition: background .3s ease-out;
 }
 .header--is-expanded {
@@ -937,6 +937,10 @@ a {
 @media (min-width: 800px) {
   .header {
     background: rgba(47,85,114, 0.3);
+    position: fixed;
+  }
+  .header--is-scrolling {
+    background: rgba(23,51,72, .85);
   }
 }
 .header__menu-content {
@@ -981,12 +985,19 @@ a {
           transform-origin: top;
   background: #2F5572;
   padding: 1rem 2rem;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 @media (min-width: 800px) {
   .header__logo {
     left: auto;
     -webkit-transform: translateX(0) scale(1);
     transform: translateX(0) scale(1);
+  }
+  .header__logo--is-scrolling {
+    -webkit-transform: scale(.57);
+    transform: scale(.57);
   }
 }
 .header__logo-inner {
