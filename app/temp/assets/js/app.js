@@ -11308,6 +11308,7 @@ var StickyHeader = function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
+    this.$lazyImages = (0, _jquery2.default)('.lazyload');
     this.$nav = (0, _jquery2.default)('.header');
     this.$navLogo = (0, _jquery2.default)('.header__logo');
     this.$triggerElement = (0, _jquery2.default)('.large-hero__heading');
@@ -11316,9 +11317,17 @@ var StickyHeader = function () {
     this.createHeaderWaypoint();
     this.createSectionWaypoints();
     this.addSmoothScroll();
+    this.refreshLazyImages();
   }
 
   _createClass(StickyHeader, [{
+    key: 'refreshLazyImages',
+    value: function refreshLazyImages() {
+      this.$lazyImages.load(function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: 'createSectionWaypoints',
     value: function createSectionWaypoints() {
 
