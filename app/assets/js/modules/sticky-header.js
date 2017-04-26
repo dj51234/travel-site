@@ -13,13 +13,6 @@ class StickyHeader {
     this.createHeaderWaypoint();
     this.createSectionWaypoints();
     this.addSmoothScroll();
-    this.refreshLazyImages();
-  }
-
-  refreshLazyImages() {
-    this.$lazyImages.load(function() {
-      Waypoint.refreshAll();
-    });
   }
 
   createSectionWaypoints() {

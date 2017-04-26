@@ -13,6 +13,7 @@ class ScrollReveal {
 
     // Add scroll fade ins
     this.createWaypoints();
+
   }
 
   hideOnPageLoad() {

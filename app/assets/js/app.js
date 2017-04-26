@@ -2,6 +2,7 @@ import MobileMenu from './modules/mobile-menu';
 import ScrollReveal from './modules/scroll-reveal';
 import StickyHeader from './modules/sticky-header';
 import Modal from './modules/modal';
+import refreshWaypoints from './modules/refresh-waypoints';
 
 // Switch to mobile nav on small screens
 const mobileMenu = new MobileMenu();
@@ -14,3 +15,6 @@ const revealTestimonials = new ScrollReveal('testimonial', '60%');
 const stickyNav = new StickyHeader();
 
 const modal = new Modal();
+
+// Refresh Waypoints every time image is lazily loaded
+refreshWaypoints();
